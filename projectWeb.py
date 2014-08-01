@@ -14,7 +14,7 @@ def main(template, name):
     dir = path + name
     try:
         if os.path.exists(dir):
-            option = input("Does the directory already exists, you want to overwrite it?(s/n): ")
+            option = input("Does the directory already exists, you want to overwrite it?(y/n): ")
             if option.lower() == 'n':
                 return
             shutil.rmtree(dir)
